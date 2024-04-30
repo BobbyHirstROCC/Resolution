@@ -78,7 +78,8 @@ class DefaultPlannerBenchmarkTest {
 
         TestdataSolution solution = mock(TestdataSolution.class);
 
-        UnsupportedOperationException exception = new UnsupportedOperationException();
+        IllegalStateException exception = new IllegalStateException(
+                "The property (entityList) getterMethod (public java.util.List org.optaplanner.core.impl.testdata.domain.TestdataSolution.getEntityList()) on bean of class (class org.optaplanner.core.impl.testdata.domain.TestdataSolution) throws an exception.");
         when(solution.getEntityList()).thenThrow(exception);
 
         DefaultPlannerBenchmark benchmark = (DefaultPlannerBenchmark) benchmarkFactory.buildPlannerBenchmark(solution);
