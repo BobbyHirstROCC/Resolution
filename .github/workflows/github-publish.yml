@@ -1,9 +1,9 @@
 name: 'Maven Package'
 
 on:
-  release:
-    types: [created]  # Added 'edited' here
-
+  push:
+    branches:
+      - develop
 jobs:
   build:
     runs-on: ubuntu-latest
