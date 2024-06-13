@@ -47,10 +47,12 @@
       <id>github</id>
       <name>ROCC GitHub Packages</name>
       <url>https://maven.pkg.github.com/BobbyHirstROCC/Resolution</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
     </repository>
+    <snapshotRepository>
+      <id>github</id>
+      <name>ROCC GitHub Packages</name>
+      <url>https://maven.pkg.github.com/BobbyHirstROCC/Resolution</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <pluginRepositories>
